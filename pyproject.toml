@@ -8,6 +8,7 @@ authors = ["Alex <alexkravchenko116@gmail.com>"]
 python = "^3.9"
 Django = "^4.0"
 flake8 = "^4.0.1"
+pycodestyle = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 
