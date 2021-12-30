@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Bd(models.Model):
+    objects = None
     rubric = models.ForeignKey(
         'Rubric', null=True, on_delete=models.PROTECT, verbose_name='Рубрика'
     )
@@ -19,11 +20,12 @@ class Bd(models.Model):
 
 
 class Rubric(models.Model):
+    objects = None
     name = models.CharField(
         max_length=50, verbose_name='Название', db_index=True
     )
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
     class Meta:
