@@ -1,4 +1,4 @@
 [flake8]
 max-complexity=10
-ignore = E501, /migrations
+ignore = E501
 exclude = __pycache__,.migrations
