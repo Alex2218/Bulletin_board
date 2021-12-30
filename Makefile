@@ -2,4 +2,4 @@ install:
 	poetry install
 
 make lint:
-	poetry run flake8 Bulletin_board
+	poetry run flake8 board
